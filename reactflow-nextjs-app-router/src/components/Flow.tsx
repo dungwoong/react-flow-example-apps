@@ -9,6 +9,7 @@ import {
   useEdgesState,
   type OnConnect,
 } from "@xyflow/react";
+import { ButtonEdge } from "./edges/ButtonEdge";
 
 import "@xyflow/react/dist/style.css";
 
@@ -33,6 +34,7 @@ export default function App() {
       edgeTypes={edgeTypes}
       onEdgesChange={onEdgesChange}
       onConnect={onConnect}
+      defaultEdgeOptions={{ type: "button-edge" }}
       fitView
     >
       <Background />
